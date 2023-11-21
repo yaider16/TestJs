@@ -6,7 +6,7 @@
     --min-width: 500px;
 }
 body {
-    margin: 0px;
+    margin: 0;
     font-family: 'Arvo',Arial,sans-serif;
 }
 
@@ -84,12 +84,12 @@ body {
 @media (max-width:870px) {
     .nav > .nav-header{
         display: inline-block;
-        margin: 0px;
+        margin: 0;
     }
     .nav > .nav-btn {
         display: inline-block;
         position: absolute;
-        right: 0px;
+        right: 0;
         top: 20px;
     }
     .nav > .nav-btn > label {
@@ -112,11 +112,11 @@ body {
         display: block;
         width: 100%;
         background-color: #333;
-        height: 0px;
+        height: 0;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
         top: 50px;
-        left: 0px;
+        left: 0;
     }
     .nav > .nav-links > ul li a {
         display: block;
@@ -267,10 +267,11 @@ body {
 
 .about{
     position: absolute;
-    top: 640px;
+    top: 590px;
     padding: 50px 0;
     width: 100%;
     min-height: calc(85vh - 70px) !important;
+    background-color: #f9f9f9;
 }
 .about .info_container{
     width: 100%;
@@ -278,6 +279,7 @@ body {
     margin: 0 auto;
     padding: 0 10px;
     transition: all .7s ease-in-out;
+    z-index: 1;
 }
 .about .info_container .img_roulette{
     background-image: url("https://static1.s123-cdn-static-a.com/uploads/8703801/2000_6559a65813676.jpg");
@@ -290,6 +292,7 @@ body {
     max-width: 100%;
     min-width: var(--min-width);
     height: auto;
+    z-index: 1;
 }
 @media(max-width: 768px){
     .info_container{
@@ -339,9 +342,10 @@ body {
     position: absolute;
     top: 50px;
     left: 40px;
-    z-index: -1;
+    z-index: 2;
     padding:0;
     width: 100px;
+    opacity: 0;
     transition: all .7s ease-in-out;
     font-size: larger;
 }
@@ -349,6 +353,7 @@ body {
 @media (max-width: 780px){
     .info_container:hover .about_us{
         top: 0;
+        opacity: 1;
     }
     .info_container .info#mission:hover{
         width: 80%;
@@ -365,6 +370,7 @@ body {
 @media (min-width: 781px){
     .info_container:hover .about_us{
         top: 0;
+        opacity: 1;
     }
     .info_container:hover .info#vision{
         width: 30%;
@@ -377,3 +383,14 @@ body {
         top: 10%;
     }
 }
+
+.carousel_section{
+    position: absolute;
+    top: 1250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    left: 20%;
+    }

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="carousel.css">
 </head>
 <body>
     <div class="nav">
@@ -19,7 +20,7 @@
                 <a href="#" style="text-decoration: none; color: #eeeeee">Club Deportivo Hunza</a>
             </div>
         </div>
-        <div class="nav-btn">
+        <div class="nav-btn" id="nav-btn">
             <label for="nav-check">
                 <span></span>
                 <span></span>
@@ -29,11 +30,11 @@
 
         <div class="nav-links">
             <ul>
-                <li><a href="#" target="_blank">Inicio</a></li>
-                <li><a href="#" target="_blank">Nosotros</a></li>
-                <li><a href="#" target="_blank">Impacto</a></li>
-                <li><a href="#" target="_blank">Logros</a></li>
-                <li><a href="#" target="_blank">Contacto</a></li>
+                <li><a href="#init" target="_blank">Inicio</a></li>
+                <li><a href="#about" target="_blank">Nosotros</a></li>
+                <li><a href="#impact" target="_blank">Impacto</a></li>
+                <li><a href="#not1" target="_blank">Logros</a></li>
+                <li><a href="#contact" target="_blank">Contacto</a></li>
                 <li><label for="nav-check">
                     <svg class="ekis" height="2.5em" viewBox="0 0 384 512">
                         <style>svg{fill: #ffffff}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
@@ -43,19 +44,19 @@
     </div>
     <div class="principal_container">
         <div class="second_container">
-            <div class="principal_text" style="text-align: center">
+            <div class="principal_text" style="text-align: center" id="init">
                 <h1>Competitividad, compromiso y diferenciación </h1>
             </div>
             <div class="line"></div>
             <div class="description" style="text-align: center"><h2>¿QUIENES SOMOS?</h2><br><p>Club Deportivo Hunza es un espacio de formación integral dirigido a niños y jóvenes, ubicado en la ciudad de Tunja, constituido como una entidad sin ánimo de lucro y registrado ante la Liga de Boyacá</p>
                 <br><br></div>
         </div>
-        <div class="container"><div class="colorsito"></div></div>
+        <div class="container"></div>
     </div>
     <section class="about">
         <div class="info_container">
+            <div class="about_us" id="about">Sobre nosotros</div>
             <div class="img_roulette"></div>
-            <div class="about_us">Sobre nosotros</div>
             <div class="info" id="mission">
                 <div class="mission"><h1>MISIÓN</h1><br> <p>Orientar la práctica y competencia deportiva a través del fomento y promoción el del futbol colombiano, formando futbolistas múltiples categorías, mediante un método de entrenamiento fundamentado en un desarrollo psicomotriz, técnico-táctico y mental de manera pedagógica, fundamentado en el desarrollo de competencias según la etapa de desarrollo, la categoría y la edad de los deportistas.</p></div>
             </div>
@@ -64,49 +65,143 @@
             </div>
         </div>
     </section>
+    <section class="carousel_section">
+        <h1 class="text" id="impact">Impacto Social</h1>
 
-    <section class="carousel">
-        <h1 class="text">Impacto Social</h1>
+        <div class="table" id="table">
+            <div class="row">
+                <div class="cell image-cell">
+                    <img src="imgs/Daniel%20Duarte_023301.jpg" alt="Imagen 1">
+                </div>
+                <div class="cell">
+                    <h2>Daniel Duarte</h2>
+                    <p>El tiempo que destino a mi estudio y al club ocupa gran parte de mi día, por lo que evito distracciones y actividades que no me enriquecen como persona.</p>
+                </div>
+            </div>
 
-        <div class="carousel_container">
-            <div class="carousel_title">Nuestros logros</div>
-            <div class="carousel">
-                <div class="carousel_item">
-                    <div class="carousel_img" id="img1"></div>
-                    <div class="carousel_text">Campeones 2019</div>
+            <div class="row">
+                <div class="cell image-cell">
+                    <img src="imgs/David%20Nuñez_023301.jpg" alt="Imagen 2">
                 </div>
-                <div class="carousel_item">
-                    <div class="carousel_img" id="img2"></div>
-                    <div class="carousel_text">Campeones 2019</div>
+                <div class="cell">
+                    <h2>David Nuñez</h2>
+                    <p>Gracias al tiempo que llevo acá y a las dinámicas de los entrenamientos, mi rendimiento deportivo ha mejorado notablemente y formando parte de un equipo, mi desenvolvimiento social es mayor. La preocupación del profe por la participación de todos nosotros, así como el hecho de que nos motive a luchar por nuestros sueños me parece genial, podría decirse que hace una gestión “con el corazón”.</p>
                 </div>
-                <div class="carousel_item">
-                    <div class="carousel_img" id="img3"></div>
-                    <div class="carousel_text">Campeones 2019</div>
+            </div>
+
+            <div class="row">
+                <div class="cell image-cell">
+                    <img src="imgs/Dilan%20Acevedo_023303.jpg" alt="Imagen 2">
                 </div>
-                <div class="carousel_item">
-                    <div class="carousel_img" id="img4"></div>
-                    <div class="carousel_text">Campeones 2019</div>
+                <div class="cell">
+                    <h2>Dilan Acevedo</h2>
+                    <p></p>
                 </div>
-                <div class="carousel_item">
-                    <div class="carousel_img" id="img5"></div>
-                    <div class="carousel_text">Campeones 2019</div>
+            </div>
+
+            <div class="row">
+                <div class="cell image-cell">
+                    <img src="imgs/Erick%20Medina_023259.jpg" alt="Imagen 2">
                 </div>
-                <div class="carousel_item">
-                    <div class="carousel_img" id="img6"></div>
-                    <div class="carousel_text">Campeones 2019</div>
+                <div class="cell">
+                    <h2>Erick Medina</h2>
+                    <p>Desde que hago un uso sano de mi tiempo libre en el club, soy una persona más perceptiva. El profe nuca decae ante las adversidades, sabe cómo exigirnos y llamarnos la atención con respeto, su perseverancia es de admirar. El enfoque de versatilidad en el que se busca que como jugadores rindamos en diferentes en posiciones en el campo de juego es algo para resaltar. </p>
                 </div>
-                <div class="carousel_item">
-                    <div class="carousel_img" id="img7"></div>
-                    <div class="carousel_text">Campeones 2019</div>
+            </div>
+
+            <div class="row">
+                <div class="cell image-cell">
+                    <img src="imgs/images%20(1)_023232.jpg" alt="Imagen 2">
                 </div>
-                <div class="carousel_item">
-                    <div class="carousel_img" id="img8"></div>
-                    <div class="carousel_text">Campeones 2019</div>
+                <div class="cell">
+                    <h2>xde</h2>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell image-cell">
+                    <img src="imgs/Ivan%20Espinoza_023301.jpg" alt="Imagen 2">
+                </div>
+                <div class="cell">
+                    <h2>Ivan Espinoza</h2>
+                    <p>Puedo destacar lo comprensivo que ha sido el profe al establecer horarios y modificarlos de tal forma que no afecten nuestro desempeño académico. Gracias a la exigencia de mis padres, asumo mi tiempo en el club como un compromiso y no como un juego.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell image-cell">
+                    <img src="imgs/Rafael%20Ramón%20Gutierrez_023300.jpg" alt="Imagen 2">
+                </div>
+                <div class="cell">
+                    <h2>Rafael Gutierrez</h2>
+                    <p>asdasd.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell image-cell">
+                    <img src="imgs/Santiago%20Lopez_023300.jpg" alt="Imagen 2">
+                </div>
+                <div class="cell">
+                    <h2>Santiago Lopez</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell image-cell">
+                    <img src="imgs/Tomas%20Guerrero_023303.jpg" alt="Imagen 2">
+                </div>
+                <div class="cell">
+                    <h2>Tomas Guerrero</h2>
+                    <p></p>
                 </div>
             </div>
         </div>
     </section>
-    <i id="gotoTop" class="gotoTop page-scroll" style="display: block; overflow: hidden; height: 40px; padding: 0px; margin: 0px; width: 40px; opacity: 1; z-index: 2"><i class="svg-m s123-icon-converter " data-icon-name="angle-up" style=" mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/angle-up.svg?v=2'); -webkit-mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/angle-up.svg?v=2');" data-ie11-classes="" alt="angle-up">&nbsp;</i></i>
+    <section class="not" id="not">
+        <h1 id="not1">Logros e historia</h1>
+        <section class="logros">
+            <div class="part">
+                <img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/23242/400_5cdc34e8c7a71.jpg" alt="" style="width: 250px; border-radius: 10px">
+                <h3>Iniciativa socia, primeros pasos</h3><p><br> Nuestra escuela de fútbol ofrece un programa completo para niños que quieren aprender y disfrutar del fútbol. Tenemos entrenadores especializados y enfocados en el desarrollo de habilidades y el fomento del espíritu deportivo.</p>
+            </div>
+            <div class="part">
+                <img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/3896/400_5cda433ab94e1.jpg" alt="" style="width: 250px; border-radius: 10px">
+                <h3>Constitución y formalización</h3><p><br> Organizamos partidos amistosos regulares donde puedes enfrentarte a otros jugadores apasionados por el fútbol y poner a prueba tus habilidades en un ambiente competitivo y divertido.</p>
+            </div>
+            <div class="part">
+                <img src="https://static1.s123-cdn-static-a.com/ready_uploads/media/24373/400_5cdcf71517875.jpg" alt="" style="width: 250px; border-radius: 10px">
+                <h3>Logros y participaciones</h3><p><br> Nuestros entrenadores altamente capacitados brindan sesiones de entrenamiento personalizadas para ayudarte a mejorar tus habilidades técnicas, tácticas y físicas en el fútbol.</p>
+            </div>
+        </section>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>INFORMACION Y CONTACTO</h1>
+        <div class="container_contact">
+            <div class="contact_info">
+                <p style="padding-bottom: 10px">Tunja, Boyacá, Colombia</p>
+                <a href="tel:+57-3108523122" style="padding-bottom: 10px">+57-3108523122</a>
+                <a href="mailto:clubdeportivohunza@gmail.com" style="padding-bottom: 10px">clubdeportivohunza@gmail.com</a>
+                <p>Martes a sabados <br> 03:00 pm - 06:00 pm</p>
+            </div>
+        </div>
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.313487648661!2d-73.37075550962356!3d5.520414015803702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7dd853a4028b%3A0xa2ef7d7ed0d8caad!2sClub%20Deportivo%20Hunza!5e0!3m2!1ses!2sco!4v1700606199450!5m2!1ses!2sco" width="600" height="450" style="border:0; position: absolute; top: 630%;left: 10%; width: 80%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br><br><br><br>
+    <i id="gotoTop" class="gotoTop page-scroll" style="display: block; overflow: hidden; height: 40px; padding: 0; margin: 0; width: 40px; opacity: 1; z-index: 2"><i class="svg-m s123-icon-converter " data-icon-name="angle-up" style=" mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/angle-up.svg?v=2'); -webkit-mask: url('https://static1.s123-cdn-static-a.com/ready_uploads/svg/angle-up.svg?v=2');" data-ie11-classes="" >&nbsp;</i></i>
     <script src="App.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
