@@ -1,5 +1,172 @@
-li{
-    border: black 1px solid;
-    padding: 5px;
-    background-color: #E5D283;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'segoe ui', serif;
+}
+
+.nav {
+    height: 90px;
+    width: 100%;
+    background-color: #f25915;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'nunito','Arvo',Arial,sans-serif;
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 550;
+    font-family: 'nunito','Arvo',Arial,sans-serif;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+.nav > .nav-links > ul li a{
+    display: block;
+    padding: 0 8px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 20%;
+}
+.nav > .nav-links > ul{
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
+}
+.nav > .nav-links > ul li{
+    display: inline-block;
+    background-color: #f25915;
+}
+.nav > .nav-links > ul li:hover{
+    background-color: #f0723a;
+    border-radius: 5px;
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+.nav .nav-links ul a i{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 7px;
+    margin-left: 5px;
+}
+
+
+@media (max-width:780px) {
+    .nav > .nav-header{
+        display: inline-block;
+        margin: 0px;
+    }
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 20px;
+    }
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav > .nav-links > ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav > .nav-links > ul li{
+        display: flex;
+        margin-bottom: 20px;
+        padding: 0;
+        background-color: #333;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav > .nav-links > ul li label svg{
+        color: white;
+        visibility: visible;
+    }
+    .nav > .nav-links > ul li label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10%;
+    }
+    .nav > .nav-links > ul li:first-child{
+        margin-top: 100px;
+    }
+    .nav > .nav-links > ul li a{
+        padding: 0 50%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0;
+    }
+
+    .nav > #nav-check:checked ~ .nav-links {
+        top: 0;
+        width: 100%;
+        height: calc(100vh);
+        overflow-y: auto;
+    }
+    ul:last-child:checked ~ .nav-links {
+        height: 0;
+    }
+    ul:last-child svg:hover{
+        cursor: pointer;
+    }
+    .nav > .nav-header > .nav-title {
+        display: inline-block;
+        font-size: 15px;
+        color: #fff;
+        font-weight: 550;
+        font-family: 'nunito', Helvetica, sans-serif;
+        padding: 10px 10px 10px 10px;
+    }
+}
+.ekis{
+    visibility: hidden;
 }
